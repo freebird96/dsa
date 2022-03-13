@@ -55,6 +55,15 @@
 
 """
 
+# Time Complexity: O(n*m*4^L + w*L)
+    # Time to traverse through the board and the words: O(nm*4^L)
+    # Time to create the tree: O(w*L)
+
+# Auxillary Space: O(n*m+wL)
+
+# w = number of words
+# L = Length of the longest word
+
 class Solution(object):
     def findWords(self, board, words):
         """
